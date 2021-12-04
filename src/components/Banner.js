@@ -8,7 +8,7 @@ const Banner = () => {
           <h1 className="text-7xl text-red-900 opacity-60 mr-1 ">
             NICHOLAS EIKENBERG
           </h1>
-          <h1 className="text-7xl ml-1 absolute w-full top-0 text-blue-700 opacity-70">
+          <h1 className="text-7xl absolute w-full top-0 text-blue-700 opacity-70 transform translate-x-1 ease-out">
             NICHOLAS EIKENBERG
           </h1>
         </div>

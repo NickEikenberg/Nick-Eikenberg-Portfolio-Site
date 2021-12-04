@@ -21,7 +21,7 @@ const App = () => {
   hideWelcomeBanner();
 
   return (
-    <div className="p-5 bg-gradient-to-b from-yellow-100 via-purple-400 to-red-100 text-black">
+    <div className="p-5 bg-gradient-to-b from-yellow-100 via-purple-400 to-red-100 text-black font-josefin">
       <div className="p-5">
         {!showBanner && (
           <TransitionGroup>

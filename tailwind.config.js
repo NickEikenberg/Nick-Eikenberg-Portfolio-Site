@@ -14,6 +14,10 @@ module.exports = {
           mongodb: '#4BAB3D',
         },
       },
+      fontFamily: {
+        josefin: ['Josefin Sans', 'sans-serif'],
+      },
+      'border-opacity': ['hover'],
     },
   },
   variants: {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Header,
   Banner,
@@ -7,13 +7,28 @@ import {
   AboutMe,
   Contact,
 } from './components/Index';
+import { TransitionGroup } from 'react-transition-group';
 
 const App = () => {
+  const [showBanner, setShowBanner] = useState(true);
+
+  const hideWelcomeBanner = () => {
+    setTimeout(() => {
+      setShowBanner(false);
+    }, 5000);
+  };
+
+  hideWelcomeBanner();
+
   return (
-    <div className="p-5 bg-gradient-to-b from-yellow-100 to-purple-300 text-black">
+    <div className="p-5 bg-gradient-to-b from-yellow-100 via-purple-400 to-red-100 text-black">
       <div className="p-5">
-        <Header />
-        <Banner />
+        {!showBanner && (
+          <TransitionGroup>
+            <Header />
+          </TransitionGroup>
+        )}
+        {showBanner && <Banner />}
         <AboutMe />
         <Project />
         <Contact />

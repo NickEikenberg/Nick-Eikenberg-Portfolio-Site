@@ -11,12 +11,12 @@ import {
 
 const Project = () => {
   return (
-    <div className="flex m-16">
-      <div className="w-1/2">
-        <h1 className="text-6xl">Project Name</h1>
-        <h2 className="text-3xl">Full-Stack Application | React</h2>
-        <div className="h-1/3">
-          <p className="text-xl">
+    <div name="projects" className="flex m-16 h-screen">
+      <div className="w-1/2 h-3/4 flex flex-col justify-center text-left space-y-2">
+        <h1 className="text-6xl mb-8">Project Name</h1>
+        <h2 className="text-3xl font-light">Full-Stack Application | React</h2>
+        <div className="h-1/2">
+          <p className="text-2xl font-extralight">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -26,13 +26,13 @@ const Project = () => {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <div className="flex h-1/4 space-x-8">
+        <div className="flex space-x-8 h-1/2 py-10">
           <button class="btn flex space-x-2">
             <p>CODE</p>
             <SiGithub />
           </button>
 
-          <button class="btn space-x-2">
+          <button class="btn btn-primary space-x-2">
             <p>LIVE SITE</p>
             <FaExternalLinkAlt />
           </button>
@@ -66,14 +66,16 @@ const Project = () => {
           </div>
         </div>
       </div>
-      <div className="mockup-phone">
-        <div className="camera"></div>
-        <div className="display">
-          <div className="artboard phone-1 artboard-demo">
-            <img src="https://i.imgur.com/voqeIDC.png" alt="Unifriends"></img>
+      <section className="flex justify-center  w-1/2">
+        <div className="mockup-phone h-3/4">
+          <div className="camera"></div>
+          <div className="display">
+            <div className="artboard phone-1 artboard-demo">
+              <img src="https://i.imgur.com/voqeIDC.png" alt="Unifriends"></img>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

@@ -3,9 +3,10 @@ import Link from 'react-scroll';
 
 const Footer = () => {
   return (
-    <div className="h-64 bg-gray-800 text-white">
-      <h1>this is footer content.</h1>
-      {/* <Link>Back to Top</Link> */}
+    <div className="">
+      <div className="h-64 text-center flex justify-center items-center flex-col">
+        <h1 className="text-7xl">FOOTER</h1>
+      </div>
     </div>
   );
 };

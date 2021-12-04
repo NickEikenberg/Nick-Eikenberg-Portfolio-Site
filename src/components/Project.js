@@ -15,7 +15,7 @@ const Project = () => {
         <h1 className="text-6xl">Project Name</h1>
         <h2 className="text-3xl">Full-Stack Application | React</h2>
         <div className="h-3/4">
-          <p className="text-xl p-6 bg-black text-white">
+          <p className="text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -25,11 +25,11 @@ const Project = () => {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <div>
-          <h1 className="w-full bg-black text-white text-center text-3xl">
+        <div className="bg-black rounded-lg">
+          <h1 className="w-full text-white text-center text-3xl">
             Technologies Used
           </h1>
-          <div className="flex overflow-hidden text-6xl justify-center py-2 space-x-4 bg-black">
+          <div className="flex overflow-hidden text-6xl justify-center py-2 space-x-4 ">
             <div>
               <SiTailwindcss className="text-icon-tailwind" />
             </div>

@@ -1,5 +1,12 @@
 import React from 'react';
-import { Header, Banner, Footer, Project, AboutMe } from './components/Index';
+import {
+  Header,
+  Banner,
+  Footer,
+  Project,
+  AboutMe,
+  Contact,
+} from './components/Index';
 
 const App = () => {
   return (
@@ -9,6 +16,7 @@ const App = () => {
         <Banner />
         <AboutMe />
         <Project />
+        <Contact />
         <Footer />
       </div>
     </div>

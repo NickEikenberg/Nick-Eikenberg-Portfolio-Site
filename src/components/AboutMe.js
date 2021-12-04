@@ -1,14 +1,13 @@
 import React from 'react';
 
-const Banner = () => {
+const AboutMe = () => {
   return (
     <div>
       <div className="h-screen text-center flex justify-center items-center flex-col">
-        <h1 className="text-7xl">NICHOLAS EIKENBERG</h1>
-        <h2 className="text-4xl">Web Developer</h2>
+        <h1 className="text-7xl">ABOUT ME</h1>
       </div>
     </div>
   );
 };
 
-export default Banner;
+export default AboutMe;

@@ -1,13 +1,13 @@
 import React from 'react';
-import { Header, Banner, Footer, Project } from './components/Index';
+import { Header, Banner, Footer, Project, AboutMe } from './components/Index';
 
 const App = () => {
   return (
-    <div className="p-5 bg-gradient-to-b from-red-200 to-purple-800 text-black">
-      <div className="border-2 border-gray-800 bg-gray-300 rounded-md p-5">
+    <div className="p-5 bg-gradient-to-b from-yellow-100 to-purple-300 text-black">
+      <div className="p-5">
         <Header />
-        <h1>Hello Portfolio</h1>
         <Banner />
+        <AboutMe />
         <Project />
         <Footer />
       </div>

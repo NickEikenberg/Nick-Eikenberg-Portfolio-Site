@@ -1,11 +1,12 @@
 import React from 'react';
-import { FaReact, FaNode } from 'react-icons/fa';
+import { FaReact, FaNode, FaExternalLinkAlt } from 'react-icons/fa';
 import {
   SiJavascript,
   SiTailwindcss,
   SiHtml5,
   SiCss3,
   SiMongodb,
+  SiGithub,
 } from 'react-icons/si';
 
 const Project = () => {
@@ -14,7 +15,7 @@ const Project = () => {
       <div className="w-1/2">
         <h1 className="text-6xl">Project Name</h1>
         <h2 className="text-3xl">Full-Stack Application | React</h2>
-        <div className="h-3/4">
+        <div className="h-1/3">
           <p className="text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -24,6 +25,17 @@ const Project = () => {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
+        </div>
+        <div className="flex h-1/4 space-x-8">
+          <button class="btn flex space-x-2">
+            <p>CODE</p>
+            <SiGithub />
+          </button>
+
+          <button class="btn space-x-2">
+            <p>LIVE SITE</p>
+            <FaExternalLinkAlt />
+          </button>
         </div>
         <div className="bg-black rounded-lg">
           <h1 className="w-full text-white text-center text-3xl">

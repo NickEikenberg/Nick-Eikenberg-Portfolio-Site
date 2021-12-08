@@ -9,33 +9,35 @@ import {
   SiGithub,
 } from 'react-icons/si';
 
-const Project = () => {
+const Project = ({ title, subtitle, description, img }) => {
   return (
-    <div name="projects" className="flex m-16 h-screen">
+    <div name="projects" className="flex h-screen space-x-4">
       <div className="w-1/2 h-3/4 flex flex-col justify-center text-left space-y-2">
-        <h1 className="text-6xl mb-8">Project Name</h1>
-        <h2 className="text-3xl font-light">Full-Stack Application | React</h2>
+        <h1 className="text-6xl mb-8">{title}</h1>
+        <h2 className="text-3xl font-light">{subtitle}</h2>
         <div className="h-1/2">
-          <p className="text-2xl font-extralight">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <p className="font-extralight">{description}</p>
         </div>
         <div className="flex space-x-8 h-1/2 py-10">
-          <button class="btn flex space-x-2">
-            <p>CODE</p>
+          <a
+            href="https://github.com/NickEikenberg/project3-frontend"
+            target="_blank"
+            rel="noreferrer"
+            class="btn flex space-x-2"
+          >
+            <p className="mt-1">CODE</p>
             <SiGithub />
-          </button>
+          </a>
 
-          <button class="btn btn-primary space-x-2">
-            <p>LIVE SITE</p>
+          <a
+            href="https://www.unifriends.io/"
+            target="_blank"
+            rel="noreferrer"
+            class="btn btn-primary space-x-2"
+          >
+            <p className="mt-1">LIVE SITE</p>
             <FaExternalLinkAlt />
-          </button>
+          </a>
         </div>
         <div className="bg-black rounded-lg">
           <h1 className="w-full text-white text-center text-3xl">
@@ -71,7 +73,7 @@ const Project = () => {
           <div className="camera"></div>
           <div className="display">
             <div className="artboard phone-1 artboard-demo">
-              <img src="https://i.imgur.com/voqeIDC.png" alt="Unifriends"></img>
+              <img src={img} alt={title} className="mt-6"></img>
             </div>
           </div>
         </div>

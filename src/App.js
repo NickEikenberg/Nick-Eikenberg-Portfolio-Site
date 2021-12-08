@@ -3,7 +3,7 @@ import {
   Header,
   Banner,
   Footer,
-  Project,
+  Projects,
   AboutMe,
   Contact,
 } from './components/Index';
@@ -15,7 +15,7 @@ const App = () => {
         <Header />
         <Banner />
         <AboutMe />
-        <Project />
+        <Projects />
         <Contact />
         <Footer />
       </div>

@@ -9,7 +9,7 @@ import {
   SiGithub,
 } from 'react-icons/si';
 
-const Project = ({ title, subtitle, description, img }) => {
+const Project = ({ title, subtitle, description, img, siteLink, codeLink }) => {
   return (
     <div name="projects" className="flex h-screen space-x-4">
       <div className="w-1/2 h-3/4 flex flex-col justify-center text-left space-y-2">
@@ -20,7 +20,7 @@ const Project = ({ title, subtitle, description, img }) => {
         </div>
         <div className="flex space-x-8 h-1/2 py-10">
           <a
-            href="https://github.com/NickEikenberg/project3-frontend"
+            href={codeLink}
             target="_blank"
             rel="noreferrer"
             class="btn flex space-x-2"
@@ -30,7 +30,7 @@ const Project = ({ title, subtitle, description, img }) => {
           </a>
 
           <a
-            href="https://www.unifriends.io/"
+            href={siteLink}
             target="_blank"
             rel="noreferrer"
             class="btn btn-primary space-x-2"

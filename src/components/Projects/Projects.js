@@ -11,7 +11,7 @@ const Projects = () => {
           title={'Unifriends'}
           subtitle={'Front-End Application | NextJS'}
           description={
-            'Unifriends is a generative 3D NFT project. I was hired to create a webpage based on Figma designs. This site features a functioning countdown clock and several dynamically created React components. Styled entirely with TailwindCSS'
+            'Unifriends is a generative 3D NFT project. I was hired to create a webpage based on Figma designs. This site features a functioning countdown clock and several dynamically created React components. Styled with TailwindCSS'
           }
           siteLink={'https://www.unifriends.io/'}
           codeLink={''}
